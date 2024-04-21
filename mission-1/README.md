@@ -13,7 +13,7 @@
 2. Introduction to Conditionals
 3. Introduction to if Else Condition
 4. Multiple condition Logical Operators
-5. multi level if-else if-else condition
+5. Multi level if-else if-else condition
 6. (Advanced) if-else shorthand Ternary Operator
 7. (Advanced) Logical Not Operator
 8. Array Length, index, Get and set by index
@@ -50,3 +50,128 @@
 ### Conceptual Session-1
 
 1.
+
+## Compare variables and comparison operator
+
+### Variable Naming Convention
+
+- Single word
+- No quote
+- No gap or dash
+- Can not start with number
+- Can not be a keyword or reserved word
+- Prefer camel case
+
+### Operation
+
+- +, -, \*, /, %
+- +=, -=, \*=, /=
+- isNaN
+- null
+- Number
+
+### Comparison
+
+- bigger: >
+- less: <
+- equal: ==
+- greater than or equal: ≥
+- less than or equal: ≤
+- not equal: ≠
+- and: &&
+- or: ||
+
+## Introduction to if Else Condition
+
+## If statement
+
+The if statement executes a statement if a specified condition is truthy
+
+```js
+if (condition) {
+  // code be execute
+}
+```
+
+## Else statement
+
+If the condition is falsy, else statement is executed.
+
+```js
+if (5 > 3) {
+  // code will be executed
+} else {
+  // code will not be wcecuted
+}
+```
+
+```js
+if (4 > 5) {
+  // code will not be executed
+} else {
+  // code will be wcecuted
+}
+```
+
+## Multi level if-else if-else condition
+
+```js
+const price = 10000;
+
+if (price > 5000) {
+  // 10% discount
+  const discount = (price * 10) / 100;
+  const payAmount = price - discount;
+  console.log(payAmount);
+} else {
+  console.log(price);
+}
+```
+
+```js
+/**
+ * ===== Multi level if-else if-else condition =====
+ */
+
+const price = 3000;
+
+if (price > 5000) {
+  // 10% discount
+  const discount = (price * 10) / 100;
+  const payAmount = price - discount;
+  console.log(payAmount);
+} else if (price > 2500) {
+  // 5% discount
+  const discount = (price * 5) / 100;
+  const payAmount = price - discount;
+  console.log(payAmount);
+} else {
+  console.log(price);
+}
+```
+
+**Example**
+
+```js
+// BMI (Body Mass Index) Calculator
+const height = 64; // inches
+const weight = 50; // kilograms
+
+const underWeight = 18.4;
+const normal = 24.9;
+const overWeight = 39.9;
+const obese = 40;
+
+const heightInMeter = height * 0.0254; // covert to meters
+const bmi = (weight / (heightInMeter * heightInMeter)).toFixed(2);
+
+if (bmi <= underWeight) {
+  console.log(`BMI: ${bmi} Under weight`);
+} else if (bmi > underWeight && bmi <= normal) {
+  console.log(`BMI: ${bmi} Normal weight`);
+} else if (bmi > normal && bmi <= overWeight) {
+  console.log(`BMI: ${bmi} Over weight`);
+} else if (bmi >= obese) {
+  console.log(`BMI: ${bmi} Obese weight`);
+}
+```
