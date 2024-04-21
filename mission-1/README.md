@@ -51,7 +51,7 @@
 
 1.
 
-## Compare variables and comparison operator
+# Compare variables and comparison operator
 
 ### Variable Naming Convention
 
@@ -81,7 +81,7 @@
 - and: &&
 - or: ||
 
-## Introduction to if Else Condition
+# Introduction to if Else Condition
 
 ## If statement
 
@@ -113,7 +113,7 @@ if (4 > 5) {
 }
 ```
 
-## Multi level if-else if-else condition
+# Multi level if-else if-else condition
 
 ```js
 const price = 10000;
@@ -174,4 +174,104 @@ if (bmi <= underWeight) {
 } else if (bmi >= obese) {
   console.log(`BMI: ${bmi} Obese weight`);
 }
+```
+
+# (Advanced) if-else shorthand Ternary Operator
+
+```jsx
+const isLeader = true;
+let price = 1100;
+
+if (isLeader === true) {
+  if (price > 1000) {
+    price = price / 2;
+  } else {
+    price = 0;
+  }
+} else {
+  price = price + 100;
+}
+
+console.log(price);
+```
+
+**Ternary Operator Example**
+
+```jsx
+// semi advanced ternary
+price = isLeader === true ? (price > 1000 ? price / 2 : 0) : price + 100;
+
+console.log(price);
+```
+
+# (Advanced) Logical Not Operator (!)
+
+- Negation operator
+- Logical complement
+- Flips the value of a Boolean
+- If the value is true, returns false
+- If the value is false, return true
+
+**Logical Not is also used with non-Boolean values**
+
+**More Example:**
+
+```jsx
+!true; // it returns false
+!false; // it returns true
+!""; // it returns true
+!"Cat"; // it returns false
+```
+
+### Use Cases of Logical Not (!)
+
+**Conditional Statement**
+
+```jsx
+// Conditional Statement
+const isLogged = false;
+if (!isLogged) {
+  console.log("User is not logged in");
+}
+```
+
+```jsx
+// Toggling Boolean Values
+let isEnabled = true; // toggling the boolean value
+isEnabled = !isEnabled;
+
+console.log(isEnabled); // output: false
+```
+
+```jsx
+// Checking for Falsy Values
+const inputValue = null;
+if (!inputValue) {
+  console.log("Input value is Falsy");
+}
+```
+
+### Double Not (!!)
+
+**What is it?**
+
+**Double Not** forcefully converts any value to the corresponding Boolean value (true or false)
+
+**Example:**
+
+```jsx
+!!true; // !!truthy returns true;
+!!false; // !!falsy return false;
+```
+
+```jsx
+let userId = 10;
+console.log(!!userId);
+// expected output -> true
+
+console.log(!userId);
+// expected output -> false
+
+console.log(userId);
+// expected output -> 10
 ```
