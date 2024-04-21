@@ -433,3 +433,27 @@ while (num3 <= 20) {
 
 console.log(sum);
 ```
+
+## Problems (For Loop)
+
+1. I will invest at least 6 hours every single day for next 60 days!" this message 60 times. So display this.
+2. Odd-Even
+   1. Find all the odd numbers from 61 to 100.
+   2. Find all the even numbers from 78 to 98.
+3. Calculate Sum
+   1. Display sum of all the odd numbers from 91 to 129.
+   2. Display sum of all the even numbers from 51 to 85.
+4. Generate a multiplication table for number 9
+5. Implement a countdown timer that counts down from 81 to 65.
+
+## Problems (While Loop)
+
+1. I will invest at least 6 hours every single day for next 60 days!" this message 60 times. So display this.
+2. Odd-Even
+   1. Find all the odd numbers from 61 to 100.
+   2. Find all the even numbers from 78 to 98.
+3. Calculate Sum
+   1. Display sum of all the odd numbers from 81 to 131.
+   2. Display sum of all the even numbers from 206 to 311.
+4. As Ersa is learning now, she wants to explore more and more. Tell Ersa to generate a multiplication table for number 5
+5. Implement a countdown timer that counts down from 21 to 15.
