@@ -326,3 +326,58 @@ console.log(numbers);
 numbers.unshift(88);
 console.log(numbers);
 ```
+
+# Introduction to For Loop
+
+**While loop Example**
+
+```jsx
+let num = 0; // loop variable
+while (num < 5) {
+  // loop condition
+  console.log(num); // loop statement
+  num++; // loop variable change
+}
+```
+
+**For Loop Structure**
+
+```jsx
+/**
+ * For loop structure
+ * for (  ;   :  ) {
+ *
+ * }
+ * ----------------------
+ *
+ * for (first part; second part; third part) {
+ *  loop statement
+ * }
+ *
+ *--------------------------
+ * for (loop variable; loop condition; loop variable change) {
+ * loop statement
+ * }
+ */
+```
+
+```jsx
+// for loop
+for (let num = 0; num < 5; num++) {
+  console.log(num);
+}
+```
+
+**Example:**
+
+```jsx
+// even
+for (let i = 0; i <= 20; i = i + 2) {
+  console.log(i);
+}
+
+// odd
+for (let i = 1; i <= 20; i = i + 2) {
+  console.log(i);
+}
+```
