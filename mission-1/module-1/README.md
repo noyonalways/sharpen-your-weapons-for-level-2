@@ -1,25 +1,25 @@
 <h1>Module-1: Fundamental Concepts of Conditional, Array & Loops</h1>
 
-- [Compare variables and comparison operator](#compare-variables-and-comparison-operator)
+- [1. Compare variables and comparison operator](#1-compare-variables-and-comparison-operator)
   - [Variable Naming Convention](#variable-naming-convention)
   - [Operation](#operation)
   - [Comparison](#comparison)
-- [Introduction to if Else Condition](#introduction-to-if-else-condition)
+- [2. Introduction to if Else Condition](#2-introduction-to-if-else-condition)
   - [If statement](#if-statement)
   - [Else statement](#else-statement)
-- [Multi level if-else if-else condition](#multi-level-if-else-if-else-condition)
-- [(Advanced) if-else shorthand Ternary Operator](#advanced-if-else-shorthand-ternary-operator)
-- [(Advanced) Logical Not Operator (!)](#advanced-logical-not-operator-)
+- [3. Multi level if-else if-else condition](#3-multi-level-if-else-if-else-condition)
+- [4. (Advanced) if-else shorthand Ternary Operator](#4-advanced-if-else-shorthand-ternary-operator)
+- [5. (Advanced) Logical Not Operator (!)](#5-advanced-logical-not-operator-)
   - [Use Cases of Logical Not (!)](#use-cases-of-logical-not-)
   - [Double Not (!!)](#double-not-)
-- [Array Length, Index, Get and Set By Index](#array-length-index-get-and-set-by-index)
-- [Add Remove elements form array using push, pop, shift, upshift](#add-remove-elements-form-array-using-push-pop-shift-upshift)
-- [Introduction to For Loop](#introduction-to-for-loop)
-- [Problem Solving With For Loop](#problem-solving-with-for-loop)
+- [6. Array Length, Index, Get and Set By Index](#6-array-length-index-get-and-set-by-index)
+- [7. Add Remove elements form array using `push()`, `pop()`, `shift()`, `upshift()`](#7-add-remove-elements-form-array-using-push-pop-shift-upshift)
+- [8. Introduction to For Loop](#8-introduction-to-for-loop)
+- [9. Problem Solving With For Loop](#9-problem-solving-with-for-loop)
   - [Problems (For Loop)](#problems-for-loop)
   - [Problems (While Loop)](#problems-while-loop)
 
-# Compare variables and comparison operator
+# 1. Compare variables and comparison operator
 
 ### Variable Naming Convention
 
@@ -49,7 +49,7 @@
 - and: &&
 - or: ||
 
-# Introduction to if Else Condition
+# 2. Introduction to if Else Condition
 
 ## If statement
 
@@ -81,7 +81,7 @@ if (4 > 5) {
 }
 ```
 
-# Multi level if-else if-else condition
+# 3. Multi level if-else if-else condition
 
 ```js
 const price = 10000;
@@ -144,7 +144,7 @@ if (bmi <= underWeight) {
 }
 ```
 
-# (Advanced) if-else shorthand Ternary Operator
+# 4. (Advanced) if-else shorthand Ternary Operator
 
 ```jsx
 const isLeader = true;
@@ -172,7 +172,7 @@ price = isLeader === true ? (price > 1000 ? price / 2 : 0) : price + 100;
 console.log(price);
 ```
 
-# (Advanced) Logical Not Operator (!)
+# 5. (Advanced) Logical Not Operator (!)
 
 - Negation operator
 - Logical complement
@@ -244,7 +244,7 @@ console.log(userId);
 // expected output -> 10
 ```
 
-# Array Length, Index, Get and Set By Index
+# 6. Array Length, Index, Get and Set By Index
 
 ```js
 // array length
@@ -267,7 +267,7 @@ numbers[1] = 999;
 console.log(numbers);
 ```
 
-# Add Remove elements form array using push, pop, shift, upshift
+# 7. Add Remove elements form array using `push()`, `pop()`, `shift()`, `upshift()`
 
 - push(): Appends new elements to the end of an array, and returns the new length of the array.
 - pop(): Removes the last element from an array and returns that element. If the array is empty, undefined is returned and the array is not modified.
@@ -295,7 +295,7 @@ numbers.unshift(88);
 console.log(numbers);
 ```
 
-# Introduction to For Loop
+# 8. Introduction to For Loop
 
 **While loop Example**
 
@@ -350,7 +350,7 @@ for (let i = 1; i <= 20; i = i + 2) {
 }
 ```
 
-# Problem Solving With For Loop
+# 9. Problem Solving With For Loop
 
 **Using For Loop**
 
