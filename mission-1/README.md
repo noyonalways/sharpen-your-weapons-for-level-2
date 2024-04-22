@@ -2,10 +2,10 @@
 
 ## Modules
 
-- Module-1: Fundamental Concepts of Conditional, Array & Loops
-- Module-2: Fundamentals of String, Objects and Functions
-- Module-3: Advanced JavaScript Concepts for Level 2
-- Conceptual Session-1: Unlocking Next Level JavaScript Essentials
+- [Module-1: Fundamental Concepts of Conditional, Array & Loops](./module-1/README.md)
+- [Module-2: Fundamentals of String, Objects and Functions](./module-2/README.md)
+- [Module-3: Advanced JavaScript Concepts for Level 2](./module-3/README.md)
+- [Conceptual Session-1: Unlocking Next Level JavaScript Essentials](./session/README.md)
 
 ### Module-1
 
@@ -49,4 +49,4 @@
 
 ### Conceptual Session-1
 
-1.
+1. Part 1
