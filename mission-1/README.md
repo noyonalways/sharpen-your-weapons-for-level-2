@@ -41,7 +41,7 @@
 
 ### Module-3
 
-1. JavaScript Spread operators and React Operators
+1. JavaScript Spread operators and Rest Operators
 2. JavaScript Import, Export and Template Literals
 3. JavaScript Destructuring, Accessing Objects and Optional Chaining
 4. Understanding Conditional Logic - Ternary Operator, Truthy, Falsy
