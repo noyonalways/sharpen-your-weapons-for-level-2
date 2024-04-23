@@ -5,6 +5,10 @@
   - [Spread Operators (Object)](#spread-operators-object)
   - [REST Operators](#rest-operators)
 - [2. JavaScript Import, Export and Template Literals](#2-javascript-import-export-and-template-literals)
+- [3. JavaScript Destructuring, Accessing Objects and Optional Chaining](#3-javascript-destructuring-accessing-objects-and-optional-chaining)
+  - [Array:](#array)
+  - [Object:](#object)
+  - [Optional Chaining](#optional-chaining)
 
 # 1. JavaScript Spread operators and Rest Operators
 
@@ -128,4 +132,81 @@ welcomeMessage("rahman");
 import greetMessage from "./greeting.js";
 
 greetMessage("noyon");
+```
+
+# 3. JavaScript Destructuring, Accessing Objects and Optional Chaining
+
+### Array:
+
+- Variable name can be anything / any name
+- Position can not be changed. Position of array values are fixed
+
+```
+const myFriends = ["Taj", "Salman", "Sazid"];
+
+// Access element by index
+console.log(myFriends[0]);
+
+// Array Destructuring
+const [bestFriend, normalFriend, goodFriend] = myFriends;
+console.log(bestFriend);
+console.log(normalFriend);
+console.log(goodFriend);
+
+/**
+ * Array:
+ * - Variable name can be anything / any name
+ * - Position can not be changed. Position of array values are fixed
+ */
+```
+
+### Object:
+
+- Variable names are fixed by the object property name
+- Position can be independent
+
+```jsx
+// Object Destructuring
+const myInfo = {
+  house: 10,
+  block: "D",
+  road: "Lalmatia",
+  area: "Mohammadpur",
+  location: "Dhaka",
+};
+
+const { area, block, house, location } = myInfo;
+console.log(area, block);
+
+/**
+ * Object:
+ * - Variable names are fixed by the object property name
+ * - Position can be independent
+ */
+
+// dot notation
+console.log(myInfo.area);
+
+// bracket notation
+console.log(myInfo["road"]);
+
+// bracket notation using variable
+const myLocation = "location";
+console.log(myInfo[myLocation]);
+```
+
+### Optional Chaining
+
+```jsx
+const myInfo = {
+  house: 10,
+  block: "D",
+  road: "Lalmatia",
+  area: "Mohammadpur",
+  location: "Dhaka",
+};
+
+// Optional Chaining
+// To prevent: Cannot read properties of undefined (reading 'code')
+console.log(myInfo.area.postal?.code);
 ```
