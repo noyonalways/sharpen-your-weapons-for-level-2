@@ -141,7 +141,7 @@ greetMessage("noyon");
 - Variable name can be anything / any name
 - Position can not be changed. Position of array values are fixed
 
-```
+```js
 const myFriends = ["Taj", "Salman", "Sazid"];
 
 // Access element by index
